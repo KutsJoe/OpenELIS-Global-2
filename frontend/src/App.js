@@ -36,6 +36,7 @@ import EOrderPage from "./components/eOrder/Index";
 import RoutineIndex from "./components/Reports/routine/Index.js";
 import StudyIndex from "./components/Reports/study/index.js";
 import PrintBarcode from "./components/printBarcode/Index";
+import PatientEntryByProject from "./components/patient/study/PatientEntryByProject.js";
 
 export default function App() {
   let i18nConfig = {
@@ -304,6 +305,12 @@ export default function App() {
                   path="/PatientHistory"
                   exact
                   component={() => <PatientHistory />}
+                  role="Reception"
+                />
+                <SecureRoute
+                  path="/PatientEntryByProject"
+                  exact
+                  component={() => <PatientEntryByProject />}
                   role="Reception"
                 />
                 <SecureRoute
